@@ -1,6 +1,7 @@
 import Stories from "./Stories";
 import Posts from "./Posts";
 import Suggestions from "./Suggestions";
+import User from "./User";
 
 export default function Body () {
     return (<div class="corpo">
@@ -13,13 +14,7 @@ export default function Body () {
     </div>
 
     <div class="sidebar">
-        <div class="usuario">
-            <img src="assets/img/catanacomics.svg" />
-            <div class="texto">
-                <strong>catanacomics</strong>
-                Catana
-            </div>
-        </div>
+        <User />
 
         <Suggestions />
 
@@ -33,4 +28,3 @@ export default function Body () {
     </div>
 </div>);
 }
-
