@@ -15,6 +15,7 @@ export default function Body () {
             </div>
 
             <div class="sidebar">
+                
                 <User />
 
                 <Suggestions />
