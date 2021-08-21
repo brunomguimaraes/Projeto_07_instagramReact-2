@@ -4,27 +4,29 @@ import Suggestions from "./Suggestions";
 import User from "./User";
 
 export default function Body () {
-    return (<div class="corpo">
-    <div class="esquerda">
-        
-        <Stories />
+    return (
+        <div class="corpo">
+            <div class="esquerda">
+                
+                <Stories />
 
-        <Posts />
-        
-    </div>
+                <Posts />
+                
+            </div>
 
-    <div class="sidebar">
-        <User />
+            <div class="sidebar">
+                <User />
 
-        <Suggestions />
+                <Suggestions />
 
-        <div class="links">
-        Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
+                <div class="links">
+                Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
+                </div>
+
+                <div class="copyright">
+                © 2021 INSTAGRAM DO FACEBOOK
+                </div>
+            </div>
         </div>
-
-        <div class="copyright">
-        © 2021 INSTAGRAM DO FACEBOOK
-        </div>
-    </div>
-</div>);
+    );
 }
