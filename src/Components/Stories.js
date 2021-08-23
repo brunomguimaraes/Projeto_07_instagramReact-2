@@ -34,12 +34,12 @@ const stories = [
 ];
 const Story = (props) => {
     return (
-        <div class="story">
-            <div class="imagem">
+        <div className="story">
+            <div className="imagem">
                 <img src={props.img} alt=""/>
             </div>
             
-            <div class="usuario">
+            <div className="usuario">
                 {props.name}
             </div>
         </div>
@@ -49,13 +49,13 @@ const Story = (props) => {
 export default function Stories() {
     
     return (
-        <div class="stories">
+        <div className="stories">
 
-        {stories.map((story) => 
-        <Story name={story.name} img={story.img} />
+        {stories.map((story, index) => 
+        (<Story name={story.name} img={story.img} key={index} />)
         )}
 
-            <div class="setinha">
+            <div className="setinha">
                 <ion-icon name="chevron-forward-circle"></ion-icon>
             </div>
         </div>

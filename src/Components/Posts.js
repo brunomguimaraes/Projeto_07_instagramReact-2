@@ -18,24 +18,24 @@ const posts = [
 
 const Post = (props) => {
     return (
-        <div class="post">
-            <div class="topo">
-                <div class="usuario">
+        <div className="post">
+            <div className="topo">
+                <div className="usuario">
                     <img src={props.img} alt="" />
                     {props.name}
                 </div>
 
-                <div class="acoes">
+                <div className="acoes">
                     <ion-icon name="ellipsis-horizontal"></ion-icon>
                 </div>
             </div>
 
-            <div class="conteudo">
+            <div className="conteudo">
                 <img src={props.content} alt="" />
             </div>
 
-            <div class="fundo">
-                <div class="acoes">
+            <div className="fundo">
+                <div className="acoes">
                     <div>
                         <ion-icon name="heart-outline"></ion-icon>
                         <ion-icon name="chatbubble-outline"></ion-icon>
@@ -47,10 +47,10 @@ const Post = (props) => {
                     </div>
                 </div>
 
-                <div class="curtidas">
+                <div className="curtidas">
                     <img src={props.likeImg} alt="" />
 
-                    <div class="texto">
+                    <div className="texto">
                         Curtido por <strong>{props.likeName}</strong> e <strong>outras 101.523 pessoas</strong>
                     </div>
                 </div>
@@ -61,9 +61,9 @@ const Post = (props) => {
 
 export default function Posts() {
     return (
-        <div class="posts">
-            {posts.map((post) => 
-            <Post name={post.name} img={post.img} content={post.content} likeImg={post.likeImg} likeName={post.likeName} />
+        <div className="posts">
+            {posts.map((post, index) => 
+            <Post name={post.name} img={post.img} content={post.content} likeImg={post.likeImg} likeName={post.likeName} key={index} />
             )}
         </div>
     );

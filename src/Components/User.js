@@ -6,10 +6,10 @@ const userData = {
 
 const UserInfo = (props) => {
     return (
-        <div class="usuario">
+        <div className="usuario">
             <img src={props.img} alt="" />
 
-            <div class="texto">
+            <div className="texto">
                 <strong>{props.name}</strong>
                 {props.nickName}
             </div>
